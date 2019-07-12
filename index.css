@@ -5,32 +5,38 @@ body {
 
 ol, ul {
   padding-left: 30px;
+  list-style-type:none;
 }
 
+.board{
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .board-row:after {
   clear: both;
   content: "";
-  display: table;
 }
 
 .status {
   margin-bottom: 10px;
+  
 }
 
 .square {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 100px;
 }
+
 
 .square:focus {
   outline: none;
@@ -47,4 +53,149 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+button.move{
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width: 400px)  {
+  body {
+    font: 6px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+    list-style-type:none;
+  }
+  
+  .board{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .board-row:after {
+    clear: both;
+    content: "";
+  }
+  
+  .status {
+    margin-bottom: 10px;
+    
+  }
+  
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 30px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 30px;
+  }
+  
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+  
+  button.move{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 600px)  {
+  body {
+    font: 6px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+    list-style-type:none;
+  }
+  
+  .board{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .board-row:after {
+    clear: both;
+    content: "";
+  }
+  
+  .status {
+    margin-bottom: 10px;
+    
+  }
+  
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 30px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 30px;
+  }
+  
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+  
+  button.move{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    font-size: 1.3em;
+  }
 }
